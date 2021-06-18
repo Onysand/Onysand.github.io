@@ -1,0 +1,198 @@
+body{
+	margin: 0;
+	font-size: 0;
+	background-image: url("img/10.jpg");
+	background-size: 100.5%;
+	background-attachment: fixed;
+	background-color: #13003e
+}
+#slider{
+	position: absolute;
+	height: 540px;
+	width: 960px;
+	margin: auto;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#slides{
+	overflow: hidden;
+	width: 100%;
+}
+#image{
+	width: 800%;
+	line-height: 0;
+	transition-duration: 500ms;
+}
+.slide{
+	display: inline-block;
+	width: 12.5%;
+}
+.slide img{
+	width: 100%;
+}
+#switch1:checked ~ #control8,
+#switch2:checked ~ #control1,
+#switch3:checked ~ #control2,
+#switch4:checked ~ #control3,
+#switch5:checked ~ #control4,
+#switch6:checked ~ #control5,
+#switch7:checked ~ #control6,
+#switch8:checked ~ #control7{
+	float: left;
+	display: block;
+	border: 50px solid transparent;
+	border-right: 50px solid #f00;
+}
+#switch1:checked ~ #control2,
+#switch2:checked ~ #control3,
+#switch3:checked ~ #control4,
+#switch4:checked ~ #control5,
+#switch5:checked ~ #control6,
+#switch6:checked ~ #control7,
+#switch7:checked ~ #control8,
+#switch8:checked ~ #control1{
+	float: right;
+	display: block;
+	border: 50px solid transparent;
+	border-left: 50px solid #f00;
+}
+#switch1:checked ~ #slides #image{
+	margin-left: 0;
+}
+#switch2:checked ~ #slides #image{
+	margin-left: -100%;
+}
+#switch3:checked ~ #slides #image{
+	margin-left: -200%;
+}
+#switch4:checked ~ #slides #image{
+	margin-left: -300%;
+}
+#switch5:checked ~ #slides #image{
+	margin-left: -400%;
+}
+#switch6:checked ~ #slides #image{
+	margin-left: -500%;
+}
+#switch7:checked ~ #slides #image{
+	margin-left: -600%;
+}
+#switch8:checked ~ #slides #image{
+	margin-left: -700%;
+}
+#slider label{
+	transform: translateY(-50%);
+	position: relative;
+	bottom: 50%;
+}
+#slider input{
+	display: none;
+}
+#header{
+	position: sticky;
+	top: 0;
+	background-color: #13093e;
+	width: 100%;
+	height: 60px;
+	z-index: 1000;
+}
+#header a{
+	text-decoration-line: none;
+	color: #fff;
+}
+#header .btn{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+#header .btn .bg{
+	position: absolute;
+	height: 120%;
+	width: 100%;
+	background-color: rgba(155, 155, 155, 0.7);
+	transform: translateY(-100%);
+	transition-duration: 200ms;
+}
+#header .btn:hover .bg{
+	transform: translateY(0);
+}
+#header .text{
+	position: relative;
+	color: #ffff;
+	padding: 15px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 18px;
+	font-family: fantasy;
+}
+#header .btn-menu .submenu .text{
+	color: #083e14;
+	position: relative;
+	padding: 15px;
+	height: 25px;
+	line-height: 20px;
+	font-size: 19px;
+	font-family: serif;
+}
+#header .btn-menu{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+#header .btn-menu .submenu{
+	position: absolute;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	background-color: rgba(155, 155, 155, 0.7);
+	transform: translateY(-100%);
+	transition-duration: 200ms;
+	transition-property: transform;
+}
+#header .btn-menu:hover .submenu{
+	transform: translate(0, 0);
+}
+#header .submenu .subsubmenu{
+	position: absolute;
+	width: 100%;
+	top: 100px;
+	/*padding-top: 50px;*/
+	padding-bottom: 10px;
+	background-color: rgba(133, 133, 133, 0.5);
+	transform: translateX(99%) translateY(-50%) scaleY(0);
+	transition-duration: 200ms;
+	transition-property: transform;
+}
+#header .submenu .subsubmenu:hover{
+	transform: translateX(99%) translateY(0) scaleY(1);
+}
+#header .submenu-btn2:hover ~ .subsubmenu{
+	transform: translateX(99%) translateY(0) scaleY(1);
+}
+#header .btn-menu .submenu-btn{
+	position: relative;
+	overflow-y: hidden;
+}
+#header .btn-menu .submenu-btn .bg{
+	position: absolute;
+	height: 103%;
+	width: 100%;
+	background-color: rgba(191, 191, 191, 0.7);
+	transform: translateY(-100%);
+	transition-duration: 200ms;
+	transition-property: transform;
+}
+#header .btn-menu .submenu-btn:hover .bg{
+	transform: translateY(0);
+}
+#header .btn-menu .submenu-btn .text{
+	color: rgba(255, 255, 255, 0);
+	transition-delay: 200ms;
+	transition-duration: 500ms;
+	transition-property: color;
+}
+#header .btn-menu:hover .submenu-btn .text{
+	color: rgba(255, 255, 255, 1);
+}
