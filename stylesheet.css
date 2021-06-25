@@ -1,10 +1,14 @@
-body{
+body
+{
+	background-attachment: fixed;
+	background-color: #808085;
+	background-image: url("https://cdn.smartlydressedgames.com/Images/Website/Background.jpg");
+	background-repeat: no-repeat;
+	/*background-size: cover;*/
+	font-family: "Arial";
 	margin: 0;
 	font-size: 0;
-	font-family: "Arial";
-	background-size: 100.5%;
-	background-attachment: fixed;
-	background-color: black;
+	background-size: 100%;
 }
 p, a
 {
@@ -122,7 +126,6 @@ div.section
 }
 #header .btn-menu:hover .submenu{
 	transform: translate(0, 0);
-	text-shadow: 0px 0px 8px #d2bf22;
 }
 #header .submenu .subsubmenu{
 	position: absolute;
@@ -166,24 +169,6 @@ div.section
 #header .btn-menu:hover .submenu-btn .text{
 	color: rgba(255, 255, 255, 1);
 }
-.bgimg{
-	width: 100%;
-	position: fixed;
-	top: 0;
-	opacity: 0.4;
-	left: 0;
-	z-index: -1;
-}
-.box{
-	position: relative;
-}
-.box1-img{
-	width: 100%;
-}
-.widget{
-	margin-bottom: 27%;
-	margin-left: 27%;
-}
 #slider{
 	position: absolute;
 	height: 540px;
@@ -221,7 +206,7 @@ div.section
 	float: left;
 	display: block;
 	border: 50px solid transparent;
-	border-right: 50px solid #bbbbbb;
+	border-right: 50px solid #f00;
 }
 #switch1:checked ~ #control2,
 #switch2:checked ~ #control3,
@@ -234,7 +219,7 @@ div.section
 	float: right;
 	display: block;
 	border: 50px solid transparent;
-	border-left: 50px solid #bbbbbb;
+	border-left: 50px solid #f00;
 }
 #switch1:checked ~ #slides #image{
 	margin-left: 0;
