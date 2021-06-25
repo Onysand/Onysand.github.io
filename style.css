@@ -164,7 +164,7 @@ div.section
 	transition-property: color;
 }
 #header .btn-menu:hover .submenu-btn .text{
-	color: rgba(255, 255, 255, 1);
+	color: rgba(255, 255, 255, 1)
 }
 .bgimg{
 	width: 100%;
