@@ -6,7 +6,7 @@
 }
 
 td, th {
-    height: 200px;
-    width: 250px;
-    border: 0.5px solid black;
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
 }
