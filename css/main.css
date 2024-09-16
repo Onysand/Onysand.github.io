@@ -6,8 +6,8 @@
 }
 
 td, th {
-    height: 100px;
-    width: 200px;
+    height: 50px;
+    width: 100px;
     border: 1px solid black;
     text-align: center;
 }
