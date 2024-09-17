@@ -5,9 +5,16 @@
     transform: translate(-50%, -50%)
 }
 
-td, th {
+tr.header > td, th {
     height: 100px;
     width: 200px;
     border: 1px solid black;
+    text-align: center;
+}
+
+tr.strona > td, th {
+    height: 100px;
+    width: 200px;
+    border: 2px solid black;
     text-align: center;
 }
